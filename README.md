@@ -2,6 +2,10 @@
 Files from the RESSI's security challenge
 
 
+How many time ?
+- 4 months between February and May 2017
+
+
 Link to the event:
 - https://ressi2017.sciencesconf.org/resource/page/id/13
 
