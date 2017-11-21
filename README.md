@@ -14,13 +14,13 @@ Context of the project:
 
 
 The team:
-	- We are 2 students of the Top French engineer school Télécom SudParis (EVRY):
-		- BOUTANT Thomas
-		- SALMAN Alexandre
+- We are 2 students of the Top French engineer school Télécom SudParis (EVRY):
+	- BOUTANT Thomas
+	- SALMAN Alexandre
 
-	- Our Referents:
-		- BLANC Grégory
-		- CHARMET Fabien
+- Our Referents:
+	- BLANC Grégory
+	- CHARMET Fabien
 
 
 
