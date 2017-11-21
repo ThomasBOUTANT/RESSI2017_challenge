@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://10.0.0.2/" />
+<title>script_rollback</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">script_rollback</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Howdy, thomas</td>
+	<td>isPresent</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${isPresent} == true</td>
+	<td>pasConnecte</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/wp-login.php?redirect_to=http%3A%2F%2F10.0.0.2%2Fwp-admin%2F&amp;reauth=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_login</td>
+	<td>thomas</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_pass</td>
+	<td>faible</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=wp-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>pasConnecte</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/wp-admin/plugin-install.php</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=s</td>
+	<td>rollback</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=search-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Activate</td>
+	<td>plugin_present</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${plugin_present} == true</td>
+	<td>plugin_a_activer</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Activate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>plugin_a_activer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${plugin_present} == false</td>
+	<td>plugin_a_installer</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Install Now</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>plugin_a_installer</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

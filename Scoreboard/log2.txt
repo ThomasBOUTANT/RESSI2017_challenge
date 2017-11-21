@@ -1,0 +1,44 @@
+[info] Playing test case script_canape
+[info] Executing: |open | / |  |
+[info] Executing: |click | link=Add to cart |  |
+[info] Executing: |openAndWait | /cart |  |
+[info] Executing: |clickAndWait | link=Proceed to Checkout |  |
+[info] Executing: |type | id=billing_first_name | Bot |
+[info] Executing: |type | id=billing_last_name | Bot |
+[info] Executing: |type | id=billing_email | bot@gmail.com |
+[info] Executing: |type | id=billing_phone | 0101010101 |
+[info] Executing: |type | id=billing_address_1 | Bot |
+[info] Executing: |type | id=billing_postcode | 010101 |
+[info] Executing: |type | id=billing_city | Bot |
+[info] Executing: |click | id=place_order |  |
+[info] Executing: |store | javascript{(new Date().getHours()+":" + new Date().getMinutes() + ":" + new Date().getSeconds())} | time |
+[info] Executing: |echo | time ${time} |  |
+[info] echo: time 19:51:19
+[info] Executing: |storeText | css=strong > span.amount | prix_du_client |
+[info] Executing: |echo | ${prix_du_client} |  |
+[info] echo: 500,00¬
+[info] Test case passed
+[info] Playing test case script_table
+[info] Executing: |open | / |  |
+[error] baseUrl wasn't absolute: http:://1.ressi
+[info] Test case failed
+[info] Playing test case script_table
+[info] Executing: |open | / |  |
+[info] Executing: |click | xpath=(//a[contains(text(),'Add to cart')])[3] |  |
+[info] Executing: |openAndWait | /cart |  |
+[info] Executing: |clickAndWait | link=Proceed to Checkout |  |
+[info] Executing: |type | id=billing_first_name | Bot |
+[info] Executing: |type | id=billing_last_name | Bot |
+[info] Executing: |type | id=billing_email | bot@gmail.com |
+[info] Executing: |type | id=billing_phone | 0101010101 |
+[info] Executing: |type | id=billing_address_1 | Bot |
+[info] Executing: |type | id=billing_postcode | 010101 |
+[info] Executing: |type | id=billing_city | Bot |
+[info] Executing: |click | id=place_order |  |
+[info] Executing: |store | javascript{(new Date().getHours()+":" + new Date().getMinutes() + ":" + new Date().getSeconds())} | time |
+[info] Executing: |echo | time ${time} |  |
+[info] echo: time 19:54:56
+[info] Executing: |storeText | css=strong > span.amount | prix_du_client |
+[info] Executing: |echo | ${prix_du_client} |  |
+[info] echo: 300,00¬
+[info] Test case passed

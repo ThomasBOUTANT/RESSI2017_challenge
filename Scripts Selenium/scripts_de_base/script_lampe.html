@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://kertek.ressi" />
+<title>script_lampe</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">script_lampe</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Add to cart')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>openAndWait</td>
+	<td>/cart</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Proceed to Checkout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing_first_name</td>
+	<td>Bot</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing_last_name</td>
+	<td>Bot</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing_email</td>
+	<td>bot@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing_phone</td>
+	<td>0101010101</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing_address_1</td>
+	<td>Bot</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing_postcode</td>
+	<td>010101</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing_city</td>
+	<td>Bot</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=place_order</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{(new Date().getHours()+&quot;:&quot; + new Date().getMinutes() + &quot;:&quot; + new Date().getSeconds())}</td>
+	<td>time</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>time ${time}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=strong &gt; span.amount</td>
+	<td>prix_du_client</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${prix_du_client}</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

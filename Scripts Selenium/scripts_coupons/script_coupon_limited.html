@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://1.ressi" />
+<title>script_coupon_limited</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">script_coupon_limited</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Howdy, thomas</td>
+	<td>isPresent</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${isPresent} == true</td>
+	<td>pasConnecte</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/wp-login.php?redirect_to=http%3A%2F%2F10.0.0.2%2Fwp-admin%2F&amp;reauth=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_login</td>
+	<td>thomas</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_pass</td>
+	<td>faible</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=wp-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>pasConnecte</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/wp-admin/edit.php?post_type=shop_order</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Coupons</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Add Coupon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=title</td>
+	<td>solde</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=woocommerce-coupon-description</td>
+	<td>Servez-vous, c'est gratuit !</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=coupon_amount</td>
+	<td>200</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=free_shipping</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Usage Limits</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=usage_limit</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=usage_limit_per_user</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=publish</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
